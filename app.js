@@ -4,6 +4,7 @@ const app = express()
 const hostname = '127.0.0.1'   // set constants
 const port = 3002
 
+
 app.get('/', function (req, res) {
   res.send('Welcome to my page!')
 })
@@ -24,6 +25,8 @@ app.get('/greeting/:id',  (req, res) =>{
 app.get('/yo/:buddy',  (req, res) =>{
   res.send('<h1>miss u, ' + req.params.buddy + '!</h1>')
 })
+                           
+
 
 // handle non-existant routes
 app.use((req, res, next) => {
