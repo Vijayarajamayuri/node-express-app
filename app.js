@@ -12,7 +12,9 @@ app.get('/', function (req, res) {
 app.get('/get1', (req, res) => {
   res.send('Hello World! ')
 })
-
+app.get('/b', function (req, res) {
+  res.send('<h1 id="qw">Want to see something.....Click here!</h1>'.fontcolor("green").italics().link("http://personal.psu.edu/xqz5228/jpg.jpg"))
+})
 app.get('/capital',  (req, res) =>{
   res.send('<h1>Hello World!</h1>')
 })
@@ -25,7 +27,10 @@ app.get('/greeting/:id',  (req, res) =>{
 app.get('/yo/:buddy',  (req, res) =>{
   res.send('<h1>miss u, ' + req.params.buddy + '!</h1>')
 })
-                           
+                                                                                
+
+app.use(express.static('public'));
+
 
 
 // handle non-existant routes
