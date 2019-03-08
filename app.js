@@ -12,7 +12,7 @@ app.get('/get1', (req, res) => {
   res.send('Hello World! ')
 })
 
-app.get('/big',  (req, res) =>{
+app.get('/capital',  (req, res) =>{
   res.send('<h1>Hello World!</h1>')
 })
 app.get
@@ -22,7 +22,7 @@ app.get('/greeting/:id',  (req, res) =>{
 })
 
 app.get('/yo/:buddy',  (req, res) =>{
-  res.send('<h1>Yo, ' + req.params.buddy + '!</h1>')
+  res.send('<h1>miss u, ' + req.params.buddy + '!</h1>')
 })
 
 // handle non-existant routes
