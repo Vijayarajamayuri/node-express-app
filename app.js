@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
   res.send('Welcome to my page!')
 })
 
-app.get('/get ', (req, res) => {
+app.get('/get1', (req, res) => {
   res.send('Hello World! ')
 })
 
